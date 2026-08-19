@@ -25,7 +25,15 @@ add_executable(KnifeFights
 
 target_link_libraries(KnifeFights PRIVATE raylib)
 
-# Required Windows libraries
+# Windows
 if(WIN32)
     target_link_libraries(KnifeFights PRIVATE winmm)
+endif()
+
+# Don't open a console window when the game is launched
+if(WIN32 AND MSVC)
+    target_link_options(KnifeFights PRIVATE
+        /SUBSYSTEM:WINDOWS
+        /ENTRY:mainCRTStartup
+    )
 endif()
