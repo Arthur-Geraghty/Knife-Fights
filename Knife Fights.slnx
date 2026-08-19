@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="Knife Fights/Knife Fights.vcxproj" Id="f3a421f2-8bfd-4a1a-be1f-287e13015a68" />
+</Solution>
